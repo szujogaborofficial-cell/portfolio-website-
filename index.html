@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prémium marketing és grafikai szolgáltatások - Portfólió">
+    <title>Kreatív Stúdió | Marketing & Grafika</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">Kreatív Stúdió</a>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Főoldal</a></li>
+                    <li><a href="works.html" class="nav-link">Munkáink</a></li>
+                    <li><a href="about.html" class="nav-link">Rólunk</a></li>
+                    <li><a href="services.html" class="nav-link">Szolgáltatások</a></li>
+                    <li><a href="contact.html" class="nav-link nav-link-cta">Kapcsolat</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Kreativitás<br>
+                    <span class="accent-text">ami eladja</span><br>
+                    a márkádat
+                </h1>
+                <p class="hero-subtitle">Marketing és grafikai megoldások, amelyek eredményeket hoznak</p>
+                <div class="hero-cta">
+                    <a href="works.html" class="btn btn-primary">Nézd meg munkáinkat</a>
+                    <a href="contact.html" class="btn btn-secondary">Kezdjük el!</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <!-- Placeholder - később cseréld ki -->
+                    <div class="image-placeholder"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Görgets le</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="150">0</h3>
+                    <p class="stat-label">Befejezett Projekt</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p class="stat-label">Elégedett Ügyfél</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="8">0</h3>
+                    <p class="stat-label">Év Tapasztalat</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="15">0</h3>
+                    <p class="stat-label">Díj</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Works -->
+    <section class="featured-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kiemelt Munkáink</h2>
+                <a href="works.html" class="view-all">Összes megtekintése →</a>
+            </div>
+            
+            <div class="works-grid">
+                <!-- Project 1 -->
+                <article class="work-card">
+                    <div class="work-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Branding</span>
+                        <h3 class="work-title">Modern Tech Startup</h3>
+                        <p class="work-description">Teljes márkaidentitás kialakítása egy innovatív tech vállalatnak</p>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="work-card">
+                    <div class="work-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Webdesign</span>
+                        <h3 class="work-title">E-commerce Platform</h3>
+                        <p class="work-description">Felhasználóbarát online áruház modern design-nal</p>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="work-card">
+                    <div class="work-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="work-info">
+                        <span class="work-category">Marketing</span>
+                        <h3 class="work-title">Social Media Kampány</h3>
+                        <p class="work-description">Vírusos kampány 2M+ elérés eredménnyel</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <h2 class="section-title">Szolgáltatásaink</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3 class="service-title">Branding & Identity</h3>
+                    <p class="service-description">Egyedi arculat tervezés, logó, brand book és vizuális identitás</p>
+                    <a href="services.html" class="service-link">Részletek →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3 class="service-title">Webdesign & Development</h3>
+                    <p class="service-description">Modern, reszponzív weboldalak és online platformok fejlesztése</p>
+                    <a href="services.html" class="service-link">Részletek →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-description">SEO, social media, tartalomgyártás és online kampányok</p>
+                    <a href="services.html" class="service-link">Részletek →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Mit mondanak ügyfeleink</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Professzionális csapat, kiváló eredmények. A brand identitásunk teljesen megújult és az értékesítés is nőtt."</p>
+                    <div class="testimonial-author">
+                        <strong>Kiss János</strong>
+                        <span>CEO, TechStart Kft.</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Kreatív megoldások, határidőre történő átadás. Minden projektünkben megbízhatunk bennük."</p>
+                    <div class="testimonial-author">
+                        <strong>Nagy Eszter</strong>
+                        <span>Marketing Vezető, Fashion Store</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"A legjobb döntés volt velük dolgozni. Az eredmények magukért beszélnek!"</p>
+                    <div class="testimonial-author">
+                        <strong>Szabó Péter</strong>
+                        <span>Tulajdonos, Café Budapest</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Van egy projektötleted?</h2>
+                <p class="cta-text">Beszéljük meg, hogyan tudunk segíteni a céljaid elérésében!</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Kérj ajánlatot</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title">Kreatív Stúdió</h4>
+                    <p class="footer-text">Marketing és grafikai megoldások, amelyek eredményeket hoznak.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Gyors linkek</h4>
+                    <ul class="footer-links">
+                        <li><a href="works.html">Munkáink</a></li>
+                        <li><a href="about.html">Rólunk</a></li>
+                        <li><a href="services.html">Szolgáltatások</a></li>
+                        <li><a href="contact.html">Kapcsolat</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Kapcsolat</h4>
+                    <ul class="footer-contact">
+                        <li>info@kreativstudio.hu</li>
+                        <li>+36 30 123 4567</li>
+                        <li>Budapest, Magyarország</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Kövess minket</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="LinkedIn">IN</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kreatív Stúdió. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
